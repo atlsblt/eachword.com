@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EachWord | Music software for independent artists</title>
+  <meta name="description" content="EachWord is a music software startup. We build apps that time lyrics to the vocal, animate cover art to the beat and produce release visuals for every platform.">
+  <link rel="canonical" href="https://eachword.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EachWord">
+  <meta property="og:title" content="EachWord | Music software for independent artists">
+  <meta property="og:description" content="Apps that time lyrics to the vocal, animate cover art to the beat and produce release visuals for every platform.">
+  <meta property="og:url" content="https://eachword.com/">
+  <meta property="og:image" content="https://eachword.com/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1E1533">
+  <link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EachWord",
+    "url": "https://eachword.com",
+    "logo": "https://eachword.com/assets/logo.png",
+    "email": "b4echo@eachword.com",
+    "description": "Music software startup building apps for independent artists.",
+    "sameAs": [
+      "https://www.youtube.com/@B4Echo",
+      "https://www.instagram.com/b4echo/",
+      "https://www.tiktok.com/@b4echo.music"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-row">
+      <a href="#top" class="brand" aria-label="EachWord home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="bm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B3FA0"/><stop offset="1" stop-color="#241A3A"/></linearGradient></defs>
+          <rect width="64" height="64" rx="15" fill="url(#bm)"/>
+          <polyline points="15,25 23.5,44 32,31 40.5,44 49,25" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle class="mark-dot" cx="32" cy="17" r="4.2" fill="#F0C35A"/>
+        </svg>
+        <span class="brand-word">EachWord</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#listen">Our music</a>
+        <a class="nav-cta" href="mailto:b4echo@eachword.com?subject=EachWord%20beta">Join the beta</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="gridlines"></span></div>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <a class="pill" href="#product" data-reveal="up"><span class="pill-dot"></span>Rhythm Animator private beta for macOS</a>
+          <h1 class="lyric" id="heroLyric" aria-label="Every word, on the beat.">
+            <span>Every</span> <span>word,</span> <span>on</span> <span>the</span> <span>beat.</span>
+          </h1>
+          <p class="hero-copy" data-reveal="up" style="--d:.15s">
+            EachWord is a music software startup. We build apps that time lyrics to the vocal,
+            animate cover art to the rhythm and turn one finished song into the visuals every platform asks for.
+          </p>
+          <div class="hero-actions" data-reveal="up" style="--d:.25s">
+            <a class="btn btn-gold" href="mailto:b4echo@eachword.com?subject=EachWord%20beta">Join the beta</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="heroVisual" aria-hidden="true">
+          <div class="window">
+            <div class="win-bar"><i></i><i></i><i></i><span>Rhythm Animator</span></div>
+            <div class="win-body">
+              <div class="win-side">
+                <p class="ctl-label">Animation</p>
+                <p class="ctl-value">Pulse rings</p>
+                <p class="ctl-label">Sync to</p>
+                <p class="ctl-value">Kick + snare</p>
+                <p class="ctl-label">Intensity</p>
+                <div class="slider"><span style="--v:.72"></span></div>
+                <p class="ctl-label">Glow</p>
+                <div class="slider"><span style="--v:.45"></span></div>
+                <p class="ctl-label">Export</p>
+                <p class="ctl-value">3840 × 2160</p>
+              </div>
+              <div class="win-canvas">
+                <div class="cover">
+                  <span class="cover-core"></span>
+                  <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+                </div>
+              </div>
+              <div class="win-timeline">
+                <div class="tl-wave" id="tlWave"></div>
+                <div class="tl-playhead" id="tlPlayhead"></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-chip c1"><b>92</b> BPM detected</div>
+          <div class="float-chip c2"><span class="chip-bar"></span>Rendering 4K</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Output marquee -->
+    <section class="marquee" aria-label="Formats our apps export for">
+      <p class="marquee-label">Exports made for</p>
+      <div class="marquee-track">
+        <div class="marquee-row">
+          <span>YouTube</span><span>YouTube Shorts</span><span>Instagram Reels</span><span>TikTok</span><span>Spotify Canvas</span><span>Apple Music</span><span>Lyric videos</span><span>4K cover videos</span>
+          <span>YouTube</span><span>YouTube Shorts</span><span>Instagram Reels</span><span>TikTok</span><span>Spotify Canvas</span><span>Apple Music</span><span>Lyric videos</span><span>4K cover videos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission">
+      <div class="wrap mission-grid">
+        <h2 class="split">One song in. Every format out.</h2>
+        <div class="mission-text">
+          <p data-reveal="up">A single release on our own channel needs a cover video that moves with the track, a vertical clip with lyrics on time, a looping visual for Spotify and posts for three social apps. We kept doing all of it by hand, song after song.</p>
+          <p data-reveal="up" style="--d:.1s">EachWord turns that work into software. You bring the finished song and its artwork; our apps listen to the audio and build the rest around it.</p>
+        </div>
+      </div>
+      <div class="wrap stats" data-stagger>
+        <div class="stat" data-reveal="up"><b>3</b><span>apps in the toolkit</span></div>
+        <div class="stat" data-reveal="up"><b>4K</b><span>video export</span></div>
+        <div class="stat" data-reveal="up"><b>0.2 s</b><span>lyric timing target</span></div>
+        <div class="stat" data-reveal="up"><b>100%</b><span>local processing</span></div>
+      </div>
+    </section>
+
+    <!-- How it works (scroll-driven) -->
+    <section class="how" id="how">
+      <div class="how-track">
+        <div class="how-sticky">
+          <div class="wrap how-grid">
+            <div class="how-text">
+              <p class="kicker">How Lyric Sync works</p>
+              <h2>Lyrics that stay on the voice</h2>
+              <p class="how-lead">On-screen words usually drift because they are timed to the whole mix. We time them to the singer.</p>
+              <ol class="steps" id="steps">
+                <li class="is-active"><strong>Hear the full mix</strong><span>Drums, bass and pads hide where a phrase really starts.</span></li>
+                <li><strong>Pull the voice out</strong><span>Stem separation leaves only the vocal to listen to.</span></li>
+                <li><strong>Mark every phrase</strong><span>Speech recognition finds the first syllable of each line on the stem.</span></li>
+                <li><strong>Lock it to the bar</strong><span>Markers snap to the 2-bar grid and the words light up on time, within a fifth of a second.</span></li>
+              </ol>
+            </div>
+            <div class="how-stage" aria-hidden="true">
+              <svg id="stage" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid meet">
+                <g id="grid"></g><g id="instWave"></g><g id="vocWave"></g><g id="markers"></g>
+                <text id="stageLabelTop" x="20" y="34" class="stage-label">Full mix</text>
+                <text id="stageLabelBottom" x="20" y="404" class="stage-label" opacity="0">Instruments</text>
+              </svg>
+              <p class="stage-lyric" id="stageLyric"><span>Life</span> <span>goes</span> <span>on,</span> <span>no</span> <span>matter</span> <span>how</span> <span>far</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product" id="product">
+      <div class="wrap">
+        <p class="kicker" data-reveal="up">Product</p>
+        <h2 class="split">Three apps, one release workflow</h2>
+        <p class="section-lead" data-reveal="up">Each app started as a fix for a problem we hit while releasing our own songs.</p>
+
+        <article class="app">
+          <div class="app-visual" data-reveal="left">
+            <div class="ra-demo">
+              <div class="ra-cover"><span></span></div>
+              <div class="ra-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="app-body" data-reveal="right">
+            <p class="app-status status-beta">Private beta · macOS</p>
+            <h3>Rhythm Animator</h3>
+            <p>Turns a still cover into a video that moves with the track. It reads the beat, lets you design the animation in the middle of the artwork and exports in 4K, ready to finish in your video editor.</p>
+            <ul class="feat">
+              <li>Beat detection from the audio file</li>
+              <li>Animation designer with live preview</li>
+              <li>4K export, rendered on your Mac</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="app app-flip">
+          <div class="app-visual" data-reveal="right">
+            <div class="phone">
+              <div class="phone-screen">
+                <p class="phone-genre">melodic deep house</p>
+                <p class="phone-lyric"><span>words</span> <span>land</span> <span>when</span> <span>she</span> <span>sings</span> <span>them</span></p>
+                <p class="phone-title">B4ECHO</p>
+              </div>
+            </div>
+          </div>
+          <div class="app-body" data-reveal="left">
+            <p class="app-status status-dev">In development</p>
+            <h3>Lyric Sync</h3>
+            <p>Takes a song and its lyrics and returns timed captions for Shorts, Reels and TikTok. It listens to the separated vocal instead of guessing from loudness, then checks the rendered clip again.</p>
+            <ul class="feat">
+              <li>Vocal stem separation</li>
+              <li>Phrase timing checked against the bar grid</li>
+              <li>SRT and burned-in caption output</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="app">
+          <div class="app-visual" data-reveal="left">
+            <div class="loop-frame">
+              <div class="loop-sky"></div><div class="loop-sun"></div><div class="loop-mist"></div>
+              <span class="loop-badge">8 s loop</span>
+            </div>
+          </div>
+          <div class="app-body" data-reveal="right">
+            <p class="app-status status-dev">In development</p>
+            <h3>Canvas Loop</h3>
+            <p>Builds the short vertical loop that streaming apps play behind a track, made from the cover's own scene: light that pulses, mist that drifts, a slow shimmer on water.</p>
+            <ul class="feat">
+              <li>Seamless loop point</li>
+              <li>Motion taken from the artwork itself</li>
+              <li>Sized for Spotify Canvas</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="roadmap" id="roadmap">
+      <div class="wrap">
+        <p class="kicker kicker-light" data-reveal="up">Roadmap</p>
+        <h2 class="split">Where we are going</h2>
+        <div class="road" id="road">
+          <div class="road-line"><span id="roadFill"></span></div>
+          <div class="road-item" data-reveal="up">
+            <span class="road-dot now"></span>
+            <h3>Now</h3>
+            <p>Rhythm Animator in private beta on macOS, used on every B4Echo release.</p>
+          </div>
+          <div class="road-item" data-reveal="up" style="--d:.12s">
+            <span class="road-dot"></span>
+            <h3>Next</h3>
+            <p>Lyric Sync opens to beta testers. Canvas Loop joins the toolkit.</p>
+          </div>
+          <div class="road-item" data-reveal="up" style="--d:.24s">
+            <span class="road-dot"></span>
+            <h3>Later</h3>
+            <p>One project file shared by all three apps, so a song goes from master to every release asset in one place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listen -->
+    <section class="listen" id="listen">
+      <div class="wrap listen-grid">
+        <div class="listen-text">
+          <p class="kicker" data-reveal="up">Our music</p>
+          <h2 class="split">Tested on B4Echo first</h2>
+          <p data-reveal="up">B4Echo is our in-house music project: melodic trance, ambient, deep house and Christian music. Every EachWord tool is used on its releases before anyone else sees it. Rhythm Animator came from its cover videos; Lyric Sync came from Shorts where the words kept slipping off the vocal.</p>
+        </div>
+        <div class="platforms" data-stagger>
+          <a class="platform" data-reveal="zoom" href="https://open.spotify.com/search/B4Echo/artists" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1DB954"/><path d="M6.5 9.3c3.8-1.1 7.8-.8 11 1M7.2 12.4c3.1-.9 6.4-.6 9.1.9M7.8 15.3c2.5-.7 5-.4 7.1.7" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>Spotify</span>
+          </a>
+          <a class="platform" data-reveal="zoom" href="https://music.apple.com/us/search?term=B4Echo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#FA2D48"/><path d="M15.5 5.5v9.2a2.2 2.2 0 1 1-1.4-2V8.3l-4.6 1v6.4a2.2 2.2 0 1 1-1.4-2V7.2l7.4-1.7Z" fill="#fff"/></svg>
+            <span>Apple Music</span>
+          </a>
+          <a class="platform" data-reveal="zoom" href="https://music.youtube.com/search?q=B4Echo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#FF0000"/><circle cx="12" cy="12" r="5.6" fill="none" stroke="#fff" stroke-width="1.4"/><path d="M10.6 9.6v4.8l4-2.4-4-2.4Z" fill="#fff"/></svg>
+            <span>YouTube Music</span>
+          </a>
+          <a class="platform" data-reveal="zoom" href="https://www.youtube.com/@B4Echo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#FF0000"/><path d="M10 9v6l5.2-3L10 9Z" fill="#fff"/></svg>
+            <span>YouTube</span>
+          </a>
+          <a class="platform" data-reveal="zoom" href="https://music.amazon.com/search/B4Echo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#25D1DA"/><path d="M6 14.5c3.8 2.4 8.3 2.4 12 0M15.8 13.6l2.4.8-.6 2.3" fill="none" stroke="#0F1111" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 7v4.5M11 6v6M13.5 7.5v3.5M16 8.5v2" stroke="#0F1111" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>Amazon Music</span>
+          </a>
+          <a class="platform" data-reveal="zoom" href="https://www.deezer.com/search/B4Echo/artist" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#A238FF"/><path d="M5 17h2.6M8.6 17h2.6M12.2 17h2.6M15.8 17h2.6M8.6 14.6h2.6M12.2 14.6h2.6M15.8 14.6h2.6M12.2 12.2h2.6M15.8 12.2h2.6M15.8 9.8h2.6M15.8 7.4h2.6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>Deezer</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <div class="cta-box" data-reveal="zoom">
+          <div class="cta-wave" aria-hidden="true" id="ctaWave"></div>
+          <h2>Join the Rhythm Animator beta</h2>
+          <p>Tell us what you release and where. We are opening seats to independent artists a few at a time.</p>
+          <a class="cta-mail" href="mailto:b4echo@eachword.com?subject=EachWord%20beta">b4echo@eachword.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="EachWord home">
+          <img src="assets/favicon.svg" alt="" width="34" height="34">
+          <span class="brand-word">EachWord</span>
+        </a>
+        <p>Music software for independent artists.</p>
+        <a class="footer-mail" href="mailto:b4echo@eachword.com">b4echo@eachword.com</a>
+      </div>
+      <div class="footer-col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#product">Rhythm Animator</a></li>
+          <li><a href="#how">Lyric Sync</a></li>
+          <li><a href="#product">Canvas Loop</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Listen</h3>
+        <ul>
+          <li><a href="https://open.spotify.com/search/B4Echo/artists" target="_blank" rel="noopener">Spotify</a></li>
+          <li><a href="https://music.apple.com/us/search?term=B4Echo" target="_blank" rel="noopener">Apple Music</a></li>
+          <li><a href="https://music.youtube.com/search?q=B4Echo" target="_blank" rel="noopener">YouTube Music</a></li>
+          <li><a href="https://music.amazon.com/search/B4Echo" target="_blank" rel="noopener">Amazon Music</a></li>
+          <li><a href="https://www.deezer.com/search/B4Echo/artist" target="_blank" rel="noopener">Deezer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow</h3>
+        <ul class="social">
+          <li><a href="https://www.youtube.com/@B4Echo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8ZM9.7 15.1V8.9l5.5 3.1-5.5 3.1Z"/></svg>YouTube</a></li>
+          <li><a href="https://www.instagram.com/b4echo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2.2c-2.7 0-3 0-4 .1-3.6.2-5.5 2.1-5.7 5.7-.1 1-.1 1.3-.1 4s0 3 .1 4c.2 3.6 2.1 5.5 5.7 5.7 1 .1 1.3.1 4 .1s3 0 4-.1c3.6-.2 5.5-2.1 5.7-5.7.1-1 .1-1.3.1-4s0-3-.1-4c-.2-3.6-2.1-5.5-5.7-5.7-1-.1-1.3-.1-4-.1Zm0 1.8c2.6 0 2.9 0 4 .1 2.6.1 3.8 1.4 3.9 3.9.1 1 .1 1.3.1 3.9s0 2.9-.1 3.9c-.1 2.5-1.3 3.8-3.9 3.9-1 .1-1.3.1-4 .1s-2.9 0-3.9-.1c-2.6-.1-3.8-1.4-3.9-3.9-.1-1-.1-1.3-.1-3.9s0-2.9.1-3.9C4.3 5.5 5.5 4.3 8.1 4.1c1-.1 1.3-.1 3.9-.1Z"/></svg>Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@b4echo.music" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a8 8 0 0 0 4.7 1.5V6.7a4.7 4.7 0 0 1-4.7-4.7Z"/></svg>TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>© <span id="year">2026</span> EachWord. All rights reserved.</span>
+      <span class="footer-links"><a href="privacy.html">Privacy policy</a><a href="#top">Back to top</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
